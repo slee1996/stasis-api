@@ -9,7 +9,7 @@ module.exports = async ({displayName}) => {
   return {
     membershipId,
     displayName,
-    mergedStats: stats.data.Response.mergedAllCharacters.results.allPvP.allTime,
-    characterStats: stats.data.Response.characters.filter(character => !character.deleted)
+    stats: stats.data.Response.mergedAllCharacters.results.allPvP.allTime,
+    characters: stats.data.Response.characters.filter(character => !character.deleted)
   }
 }
