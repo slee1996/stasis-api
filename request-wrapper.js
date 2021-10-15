@@ -1,8 +1,11 @@
 const axios = require('axios')
 
-module.exports = async (endpoint, apiKey) => {
-  return await axios.get(`https://www.bungie.net/Platform${endpoint}`,
-  {
-    headers: {'X-API-Key': process.env.BUNGIE_API_KEY}
+module.exports = async ({method, url, body}) => {
+  return await axios({
+    baseURL: 'https://www.bungie.net/Platform',
+    headers: {'X-API-Key': process.env.BUNGIE_API_KEY},
+    url,
+    method,
+    body
   })
 }

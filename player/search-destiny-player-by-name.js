@@ -7,5 +7,6 @@
 const requestWrapper = require('../request-wrapper')
 
 module.exports = async ({membershipType = 'All', displayName}) => {
-  return await requestWrapper(`/Destiny2/SearchDestinyPlayer/${membershipType}/${encodeURIComponent(displayName)}/`)
+  const url = `/Destiny2/SearchDestinyPlayer/${membershipType}/${encodeURIComponent(displayName)}/`
+  return await requestWrapper(url)
 }
