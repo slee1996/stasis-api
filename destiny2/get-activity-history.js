@@ -5,7 +5,7 @@ module.exports = async ({ membershipType = 'All', membershipId, characterId }) =
     url: `/Destiny2/${membershipType}/Account/${membershipId}/Character/${characterId}/Stats/Activities/`,
     params: {
       count: "10",
-      mode: '',
+      mode: 'none',
       page: "0"
     },
     method: 'get'
