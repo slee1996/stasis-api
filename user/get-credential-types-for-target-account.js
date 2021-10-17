@@ -2,8 +2,8 @@
  * Returns a list of credential types attached to the requested account
  */
 const requestWrapper = require('../request-wrapper')
-const axios = require('axios')
 
-module.exports = async (id, apiKey) => {
-  return await requestWrapper(`/User/GetBungieNetUserById/${id}/`, apiKey)
+module.exports = async (membershipId) => {
+  const url = `/User/GetCredentialTypesForTargetAccount/${membershipId}/`
+  return await await requestWrapper({url, method: 'get'})
 }
