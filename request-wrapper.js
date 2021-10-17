@@ -6,6 +6,7 @@ module.exports = async ({
   body, 
   params
 }) => {
+  console.log(params)
   return await axios({
     baseURL: 'https://www.bungie.net/Platform',
     headers: {'X-API-Key': process.env.BUNGIE_API_KEY},
