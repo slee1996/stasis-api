@@ -4,9 +4,9 @@ module.exports = async ({ membershipType = 'All', membershipId, characterId }) =
   return await await requestWrapper({
     url: `/Destiny2/${membershipType}/Account/${membershipId}/Character/${characterId}/Stats/Activities/`,
     params: {
-      count: 10,
+      count: "10",
       mode: '',
-      page: 0
+      page: "0"
     },
     method: 'get'
   })
