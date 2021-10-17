@@ -6,6 +6,7 @@ module.exports = async ({method, url, body}) => {
     headers: {'X-API-Key': process.env.BUNGIE_API_KEY},
     url,
     method,
+    params,
     body
   })
 }
