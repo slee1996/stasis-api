@@ -8,5 +8,5 @@ const requestWrapper = require('../request-wrapper')
 
 module.exports = async (membershipId) => {
   const url = `/User/GetBungieNetUserById/${membershipId}/`
-  return await await requestWrapper({url, method: 'get'})
+  return await requestWrapper({url, method: 'get'})
 }

@@ -1,7 +1,7 @@
 const requestWrapper = require('../request-wrapper')
 
 module.exports = async () => {
-  return await await requestWrapper({
+  return await requestWrapper({
     url: '/User/GetAvailableThemes/', 
     method: 'get'
   })

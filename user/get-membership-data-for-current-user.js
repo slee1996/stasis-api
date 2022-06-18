@@ -1,5 +1,5 @@
 const requestWrapper = require('../request-wrapper')
 
 module.exports = async () => {
-  return await await requestWrapper({url: `/User/GetMembershipsForCurrentUser/`, method: 'get'})
+  return await requestWrapper({url: `/User/GetMembershipsForCurrentUser/`, method: 'get'})
 }
