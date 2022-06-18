@@ -7,6 +7,6 @@ const requestWrapper = require('../request-wrapper')
  */
 
 module.exports = async ({membershipType = 'All', displayName}) => {
-  const url = `/Destiny2/SearchDestinyPlayerByBungieName/${membershipType}/${encodeURIComponent(displayName)}/`
+  const url = `/Destiny2/SearchDestinyPlayerByBungieName/${membershipType}`
   return await requestWrapper({url, method: 'post', body: { displayName: displayName }})
 }
